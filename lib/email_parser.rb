@@ -7,6 +7,13 @@ class EmailParser
      @email = email
   end
   attr_accessor :email
+  def parse
+    email_array = []
+    email_array = @emails.split(/[,\s]/)
+    puts email_array
+    email_array = email_array.reject { |e| e == ""}
+    email_array.uniq
+  end
 end
 email_addresses = "john@doe.com, person@somewhere.org"
 parser = EmailAddressParser.new(email_addresses)
