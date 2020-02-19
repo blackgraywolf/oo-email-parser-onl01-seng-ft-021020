@@ -11,7 +11,7 @@ class EmailParser
     email_array = []
     email_array = @emails.split(",")
    email_array = email_array.reject { |e| e == " "}
-    return email_array
+   email_array
   end
 end
 email_addresses = "john@doe.com,person@somewhere.org"
