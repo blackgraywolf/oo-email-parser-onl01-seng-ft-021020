@@ -9,7 +9,7 @@ class EmailAddressParser
   attr_accessor :email
   def parse
     email_array = []
-    email_array = @emails.split(",")
+    email_array = @emails.split(',')
    email_array = email_array.reject { |e| e == " "}
    email_array
   end
