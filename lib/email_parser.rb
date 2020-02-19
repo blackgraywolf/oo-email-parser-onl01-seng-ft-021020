@@ -12,7 +12,7 @@ class EmailAddressParser
 
     email_array = @email.split(/[,\s]/)
     email_array = email_array.reject { |e| e == ""}
-    
+array = array.uniq
     email_array
   end
 end
