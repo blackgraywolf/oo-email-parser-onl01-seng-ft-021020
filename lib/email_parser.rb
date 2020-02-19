@@ -3,7 +3,8 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 class EmailParser
-  init
+   def initialize()
+  end
 end
 email_addresses = "john@doe.com, person@somewhere.org"
 parser = EmailAddressParser.new(email_addresses)
